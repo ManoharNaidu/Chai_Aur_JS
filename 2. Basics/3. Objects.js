@@ -11,14 +11,25 @@ const User = {
   [mySymbol]: "my secret",
 };
 
-console.log(User);
-console.log(User.name);
-console.log(User.age);
-console.log(User.email);
-console.log(User.mySymbol);
-console.log(typeof User.mySymbol);
+// console.log(User);
+// console.log(User.name);
+// console.log(User.age);
+// console.log(User.email);
+// console.log(User.mySymbol);
+// console.log(typeof User.mySymbol);
 
-User.age = 50;
-Object.freeze(User);
-User.age = 60;
-console.log(User);
+// User.age = 50;
+// Object.freeze(User);
+// User.age = 60;
+// console.log(User);
+
+User.greetings = function () {
+  return "Howdy!";
+};
+
+User.greet = function () {
+  return `Hello, ${this.name}!`;
+};
+
+console.log(User.greetings());
+console.log(User.greet());
