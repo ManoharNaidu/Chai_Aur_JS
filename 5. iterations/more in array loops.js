@@ -24,3 +24,9 @@ console.log(result); // [ 2, 4, 6, 8, 10 ]
 // chaining
 
 result = Nums.filter((val) => val % 2 === 0).map((val) => val * 2);
+
+// reduce
+const initial = 0;
+result = Nums.reduce((acc, val) => acc + val, initial);
+
+console.log(result); // 15
