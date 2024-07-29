@@ -6,7 +6,7 @@
 
 # Solution Code
 
-## Project-1
+## Project-1: Background Color Changer
 
 ```javascript
 const btns = document.querySelectorAll(".button");
@@ -19,7 +19,7 @@ btns.forEach(function (btn) {
 });
 ```
 
-## Project-2
+## Project-2: BMI Calculator
 
 ```javascript
 const form = document.querySelector("form");
@@ -47,4 +47,15 @@ form.addEventListener("submit", (e) => {
     results.innerHTML = `<span>BMI: ${BMI}, ${result}</span>`;
   }
 });
+```
+
+## Project-3: Digital Clock
+
+```javascript
+const clock = document.getElementById("clock");
+
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
 ```
