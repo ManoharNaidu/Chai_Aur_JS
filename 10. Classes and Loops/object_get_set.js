@@ -3,7 +3,7 @@ const User = {
   _password: "1234",
 
   get email() {
-    return this._email.trim() + "fff";
+    return this._email.trim(    ) + "fff";
   },
   set email(value) {
     this._email = value.trim().toUpperCase() + "fff";
